@@ -31,6 +31,7 @@ int main() {
 
 	vector<range> day2Input = parseRanges(readPuzzleInput("day02/input02.txt"));
 	cout << "Day 02A: " << day02A(day2Input) << endl;
+	cout << "Day 02B: " << day02B(day2Input) << endl;
 	return 0;
 }
 

@@ -9,3 +9,4 @@ struct range {
 };
 std::vector<range> parseRanges(std::vector<std::string> input);
 int64_t day02A(std::vector<range> input);
+int64_t day02B(std::vector<range> input);

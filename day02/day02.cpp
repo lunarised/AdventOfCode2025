@@ -33,15 +33,16 @@ vector<range> parseRanges(vector<string> input) {
 			int64_t lower = stoll(lowerString);
 			int64_t upper = stoll(upperString);
 
-			range range;
-			range.upper = upper;
-			range.lower = lower;
+			range a;
+			a.upper = upper;
+			a.lower = lower;
 
-			puzzleInputs.push_back(range);
+			puzzleInputs.push_back(a);
 		}
 	}
 	return puzzleInputs;
 }
+
 int64_t day02A(vector<range> input) {
 	auto t1 = std::chrono::high_resolution_clock::now();
 	int64_t sumOfInvalidIDs = 0;
@@ -54,8 +55,37 @@ int64_t day02A(vector<range> input) {
 
 		}
 	}
-	auto t2 = std::chrono::high_resolution_clock::now();
-	auto ms_int = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1);
-	cout << "Day 02A took " << ms_int.count() << " milliseconds" << endl;
 	return sumOfInvalidIDs;
 }
+
+bool checkRepeats(int64_t id, size_t run) {
+	string stringID = std::to_string(id);
+	size_t nRepeats = stringID.length() / run;
+	string pattern = stringID.substr(0, run);
+	for (size_t repeat = 1; repeat < nRepeats; repeat++) {
+		if (stringID.substr(repeat * run, run) != pattern) {
+			return false;
+		}
+	}
+	return true;
+}
+
+int64_t day02B(vector<range> input) {
+	int64_t sumOfInvalidIDs = 0;
+	for (range r : input) {
+		for (int64_t id = r.lower; id <= r.upper; id++) {
+			size_t idLength = std::to_string(id).length();
+			for (size_t run = 1; run <= idLength / 2; run++) {
+				
+				if (idLength % run == 0) {
+					if (checkRepeats(id, run)) {
+						sumOfInvalidIDs += id;
+						break;
+					}
+				}
+			}
+		}
+	}
+	return sumOfInvalidIDs;
+}
+
