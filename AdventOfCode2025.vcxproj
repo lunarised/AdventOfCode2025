@@ -131,15 +131,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="day01.cpp" />
+    <ClCompile Include="day01\day01.cpp" />
+    <ClCompile Include="day02\day02.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="input01.txt" />
+    <Text Include="day01\input01.txt" />
+    <Text Include="day02\input02.txt" />
     <Text Include="test.txt" />
+    <Text Include="test02.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="day01.h" />
+    <ClInclude Include="day01\day01.h" />
+    <ClInclude Include="day02\day02.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

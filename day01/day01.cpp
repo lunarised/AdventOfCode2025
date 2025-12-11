@@ -35,10 +35,7 @@ int day01B(vector<string> input) {
 		int change = direction * (distance % 100);
 		position += change;
 
-
 		if (distance % 100 == 0) continue;
-
-
 		if (direction == 1 && (position) > 99) {
 			zeroPasses++;
 			position = position % 100;

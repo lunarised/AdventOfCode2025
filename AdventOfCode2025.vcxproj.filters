@@ -21,7 +21,10 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="day01.cpp">
+    <ClCompile Include="day02\day02.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="day01\day01.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -29,12 +32,21 @@
     <Text Include="test.txt">
       <Filter>Resource Files\InputFiles</Filter>
     </Text>
-    <Text Include="input01.txt">
+    <Text Include="day02\input02.txt">
+      <Filter>Resource Files\InputFiles</Filter>
+    </Text>
+    <Text Include="day01\input01.txt">
+      <Filter>Resource Files\InputFiles</Filter>
+    </Text>
+    <Text Include="test02.txt">
       <Filter>Resource Files\InputFiles</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="day01.h">
+    <ClInclude Include="day01\day01.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="day02\day02.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
