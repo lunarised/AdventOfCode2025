@@ -6,6 +6,7 @@
 #include "day01/day01.h"
 #include "day02/day02.h"
 #include "day03/day03.h"
+#include "day04/day04.h"
 
 using std::string;
 using std::vector;
@@ -59,6 +60,18 @@ int main() {
 
 	startTime = std::chrono::steady_clock::now();
 	cout << "Day 03B: " << day03B(day3Input);
+	endTime = std::chrono::steady_clock::now();
+	cout << " (Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count() << " ms)" << endl;
+
+
+	vector<string> day4Input = readPuzzleInput("day04/input04.txt");
+	startTime = std::chrono::steady_clock::now();
+	cout << "Day 04A: " << day04A(day4Input);
+	endTime = std::chrono::steady_clock::now();
+	cout << " (Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count() << " ms)" << endl;
+
+		startTime = std::chrono::steady_clock::now();
+	cout << "Day 04A: " << day04B(day4Input);
 	endTime = std::chrono::steady_clock::now();
 	cout << " (Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count() << " ms)" << endl;
 	return 0;
