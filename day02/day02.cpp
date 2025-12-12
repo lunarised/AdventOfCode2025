@@ -9,7 +9,7 @@ using std::vector;
 using std::string;
 using std::stringstream;
 using std::endl;
-using std::count;
+using std::cout;
 
 
 using namespace std;
