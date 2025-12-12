@@ -133,17 +133,23 @@
   <ItemGroup>
     <ClCompile Include="day01\day01.cpp" />
     <ClCompile Include="day02\day02.cpp" />
+    <ClCompile Include="day03\day03.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="day01\input01.txt" />
-    <Text Include="day02\input02.txt" />
-    <Text Include="test.txt" />
+    <Text Include="day02\input02.txt">
+      <DeploymentContent>true</DeploymentContent>
+    </Text>
+    <Text Include="day03\input03.txt" />
+    <Text Include="day03\test03.txt" />
+    <Text Include="day01\test01.txt" />
     <Text Include="test02.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="day01\day01.h" />
     <ClInclude Include="day02\day02.h" />
+    <ClInclude Include="day03\day03.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
