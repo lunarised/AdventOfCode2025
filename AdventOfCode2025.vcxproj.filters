@@ -30,6 +30,12 @@
     <ClCompile Include="day03\day03.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="day04\day04.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="day05\day05.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="day01\test01.txt">
@@ -50,6 +56,8 @@
     <Text Include="day03\test03.txt">
       <Filter>Resource Files\InputFiles</Filter>
     </Text>
+    <Text Include="day05\test05.txt" />
+    <Text Include="day04\input04.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="day01\day01.h">
@@ -59,6 +67,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="day03\day03.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="day04\day04.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="day05\day05.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

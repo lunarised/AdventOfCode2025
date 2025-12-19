@@ -134,6 +134,8 @@
     <ClCompile Include="day01\day01.cpp" />
     <ClCompile Include="day02\day02.cpp" />
     <ClCompile Include="day03\day03.cpp" />
+    <ClCompile Include="day04\day04.cpp" />
+    <ClCompile Include="day05\day05.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -144,12 +146,16 @@
     <Text Include="day03\input03.txt" />
     <Text Include="day03\test03.txt" />
     <Text Include="day01\test01.txt" />
+    <Text Include="day04\input04.txt" />
+    <Text Include="day05\test05.txt" />
     <Text Include="test02.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="day01\day01.h" />
     <ClInclude Include="day02\day02.h" />
     <ClInclude Include="day03\day03.h" />
+    <ClInclude Include="day04\day04.h" />
+    <ClInclude Include="day05\day05.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

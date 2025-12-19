@@ -7,7 +7,7 @@
 #include "day02/day02.h"
 #include "day03/day03.h"
 #include "day04/day04.h"
-
+#include "day05/day05.h"
 using std::string;
 using std::vector;
 
@@ -70,10 +70,23 @@ int main() {
 	endTime = std::chrono::steady_clock::now();
 	cout << " (Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count() << " ms)" << endl;
 
-		startTime = std::chrono::steady_clock::now();
-	cout << "Day 04A: " << day04B(day4Input);
+	startTime = std::chrono::steady_clock::now();
+	cout << "Day 04B: " << day04B(day4Input);
+	endTime = std::chrono::steady_clock::now();
+	cout << " (Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count() << " ms)" << endl;
+
+
+	vector<string> day5Input = readPuzzleInput("day05/test05.txt");
+	startTime = std::chrono::steady_clock::now();
+	cout << "Day 05A: " << day05A(day5Input);
+	endTime = std::chrono::steady_clock::now();
+	cout << " (Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count() << " ms)" << endl;
+	
+	startTime = std::chrono::steady_clock::now();
+	cout << "Day 05B: " << day05B(day5Input);
 	endTime = std::chrono::steady_clock::now();
 	cout << " (Time: " << std::chrono::duration_cast<std::chrono::milliseconds>(endTime - startTime).count() << " ms)" << endl;
 	return 0;
+
 }
 
